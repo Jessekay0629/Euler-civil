@@ -370,8 +370,7 @@ body {
             border-radius: 20px;
             overflow: hidden;
             height: 400px;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.stockcake.com/public/d/1/b/d1bad048-80a2-4404-8297-3e7f1afe18ed_large/sunset-construction-skyline-stockcake.jpg');
             background-size: cover;
             background-position: center;
         }
