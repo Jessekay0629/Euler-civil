@@ -1,3 +1,57 @@
+/////////////////////////////////////////////////////
+        document.addEventListener('DOMContentLoaded', function() {
+            const servicesSwiper = new Swiper('.services-swiper', {
+                // Slides per view
+                slidesPerView: 1,
+                spaceBetween: 30,
+                
+                // Loop the slides
+                loop: true,
+                
+                // Autoplay
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                
+                // Navigation
+                navigation: {
+                    nextEl: '.services-next',
+                    prevEl: '.services-prev',
+                },
+                
+                // Responsive breakpoints
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    }
+                },
+                
+                // Smooth transitions
+                speed: 800,
+                
+                // Equal height slides
+                watchSlidesProgress: true,
+            });
+
+            // Pause autoplay on hover
+            const swiperContainer = document.querySelector('.services-swiper');
+            swiperContainer.addEventListener('mouseenter', () => {
+                servicesSwiper.autoplay.stop();
+            });
+            
+            swiperContainer.addEventListener('mouseleave', () => {
+                servicesSwiper.autoplay.start();
+            });
+        });
+
+
+/////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', function() {
             const swiper = new Swiper('.heroSwiper', {
                 // Auto-play configuration

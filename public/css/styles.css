@@ -137,7 +137,7 @@ body {
 
         .hero {
             position: relative;
-            height: 600px;
+            height: 500px;
             overflow: hidden;
         }
 
@@ -205,6 +205,7 @@ body {
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
+            
             padding: 0 50px;
             color: var(--white);
             display: flex;
@@ -215,6 +216,7 @@ body {
 
         .hero-text-wrapper {
             max-width: 900px;
+            margin-bottom: 100px;
         }
 
         .hero-badge {
@@ -330,11 +332,6 @@ body {
             display: none;
         }
 
-        /* Swiper Pagination */
-        .swiper-pagination {
-            bottom: 20px !important;
-            z-index: 5;
-        }
 
         .swiper-pagination-bullet {
             width: 12px;
@@ -345,5 +342,472 @@ body {
 
         .swiper-pagination-bullet-active {
             background: var(--primary-color);
+        }
+
+/*************************************** About section Styles ***************************************/
+
+.about-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .about-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        /* Left Side - Image */
+        .about-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 400px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .projects-badge {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 25px 30px;
+            border-radius: 15px;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(255, 87, 34, 0.3);
+        }
+
+        .projects-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .projects-text {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        /* Right Side - Content */
+        .about-text {
+            padding-left: 20px;
+        }
+
+        .about-section-badge {
+            color: var(--primary-color);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            margin-left: 45px; /* Push to align with title */
+        }
+
+        .about-section-badge::before,
+        .about-section-badge::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 2px;
+            background: var(--primary-color);
+        }
+
+        .about-section-badge::before {
+            left: -50px;
+        }
+
+        .about-section-badge::after {
+            right: -50px;
+        }
+
+        .about-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 25px;
+            color: var(--secondary-color);
+        }
+
+        .about-description {
+            font-size: 16px;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        /* About Us Progress Bars */
+        .about-skills-list {
+            list-style: none;
+        }
+
+        .about-skill-item {
+            margin-bottom: 30px;
+        }
+
+        .about-skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .about-skill-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .about-skill-percentage {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .about-skill-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .about-skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-color), #ff7043);
+            border-radius: 4px;
+            width: 0;
+            transition: width 2s ease-in-out;
+            position: relative;
+        }
+
+        .about-skill-progress::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-image {
+                height: 400px;
+            }
+
+            .about-text {
+                padding-left: 0;
+            }
+
+            .about-title {
+                font-size: 2rem;
+            }
+
+            .about-section-badge {
+                margin-left: 0;
+            }
+
+            .about-section-badge::before,
+            .about-section-badge::after {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 60px 0;
+            }
+
+            .about-image {
+                height: 350px;
+            }
+
+            .projects-badge {
+                bottom: 20px;
+                left: 20px;
+                padding: 20px 25px;
+            }
+
+            .projects-number {
+                font-size: 2rem;
+            }
+
+            .about-title {
+                font-size: 1.8rem;
+            }
+        }
+
+/*************************************** Services section Styles ***************************************/
+        .services-section {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .services-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .services-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .services-badge {
+            color: var(--primary-color);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .services-badge::before,
+        .services-badge::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 2px;
+            background: var(--primary-color);
+        }
+
+        .services-badge::before {
+            left: -60px;
+        }
+
+        .services-badge::after {
+            right: -60px;
+        }
+
+        .services-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        /* Swiper Container */
+        .services-slider {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-swiper {
+            padding: 20px 0 40px 0;
+        }
+
+        .services-swiper .swiper-slide {
+            height: auto;
+        }
+
+        /* Service Card */
+        .service-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 87, 34, 0.1), rgba(29, 33, 45, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .service-card:hover .service-image::before {
+            opacity: 1;
+        }
+
+        .service-content {
+            padding: 30px 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .service-description {
+            color: var(--text-light);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .service-link {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            align-self: flex-start;
+        }
+
+        .service-link:hover {
+            color: var(--primary-color);
+            transform: translateX(5px);
+        }
+
+        .service-link::after {
+            content: '+';
+            font-size: 18px;
+            font-weight: 300;
+            transition: transform 0.3s ease;
+        }
+
+        .service-link:hover::after {
+            transform: rotate(90deg);
+        }
+
+        /* Navigation Arrows */
+        .services-navigation {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .services-nav-btn {
+            width: 50px;
+            height: 50px;
+            background: var(--white);
+            border: 2px solid #e0e0e0;
+            border-radius: 50%;
+            color: var(--text-dark);
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .services-nav-btn:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+            transform: scale(1.1);
+        }
+
+        .services-nav-btn.swiper-button-disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .services-nav-btn.swiper-button-disabled:hover {
+            background: var(--white);
+            color: var(--text-dark);
+            border-color: #e0e0e0;
+            transform: none;
+        }
+
+        /* Service Images */
+        .service-1 { background-image: url('https://www.sbcivils.co.uk/wp-content/uploads/2022/04/What-Is-Highway-Construction-1.jpg'); }
+        .service-2 { background-image: url('https://jomasassociates.com/wp-content/uploads/2023/01/Geotechnical-Engineering.jpeg'); }
+        .service-3 { background-image: url('https://civil.njit.edu/sites/civil/files/styles/16x9/public/iStock-692096736.jpg?itok=uo_pwTxT'); }
+        .service-4 { background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); }
+        .service-5 { background-image: url('https://nrce.com/wp-content/uploads/2016/01/3-334x400.jpg'); }
+        .service-6 { background-image: url('https://seamspatial.co.nz/wp-content/uploads/2023/05/Untitled-design-41.png'); }
+        .service-7 { background-image: url('https://s45055.pcdn.co/programs/wp-content/uploads/sites/2/2024/11/masters-in-project-management-banner-880x550-2.jpg'); }
+        .service-8 { background-image: url('https://ridge.co.uk/wp-content/uploads/2019/09/StructEng-HeroImage-1-scaled-1360x530.jpg'); }
+        .service-9 { background-image: url('https://bldequipment.com/bld/wp-content/uploads/2025/05/223317-17994533.jpg'); }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services-section {
+                padding: 60px 0;
+            }
+
+            .services-title {
+                font-size: 2rem;
+            }
+
+            .services-badge::before,
+            .services-badge::after {
+                display: none;
+            }
+
+            .service-content {
+                padding: 25px 20px;
+            }
+
+            .service-image {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-wrapper {
+                padding: 0 15px;
+            }
+
+            .services-title {
+                font-size: 1.8rem;
+            }
         }
         
