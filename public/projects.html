@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Haven Blinds - Interior Decoration With Precision">
+    <title>Euler Civil Limited</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/external.css">
+    <link rel="icon" type="image/png" href="assets/Logo.jpeg">
+    <!-- Line Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    <!-- Swiper CSS for Background Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Header Top Bar -->
+    <div class="header-top">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="las la-phone"></i>
+                    <span>(+260) 966916832</span>
+                </div>
+                <div class="contact-item">
+                    <i class="las la-envelope"></i>
+                    <span>eulercivil2019@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="las la-clock"></i>
+                    <span>Mon-Sat: 8am-15pm Sunday Off</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="lab la-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="assets/Logo-copy.jpeg" alt="Euler Civil Ltd Logo">
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT US</a></li>
+                    <li><a href="/#services-home">SERVICES</a></li>
+                    <li><a href="/projects">PROJECTS</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#contact" class="cta-button">
+                CONTACT US <i class="las la-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+<!-- Page title --------------------------------------------------------------------------------------->
+
+<section class="page-title">
+  <div class="page-title-bg"></div>
+  <div class="title-container">
+      <div class="title-content">
+          <h1>Projects</h1>
+          <div class="breadcrumb">
+              <a href="/">Home</a>
+              <span class="separator"><i class="las la-angle-right"></i></span>
+              <span class="current-page">Projects</span>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+    <section class="gallery-section">
+        <div class="gallery-header">
+            <h2>Our Past <span>Works</span></h2>
+            <p>Explore our portfolio of successful projects and creative solutions that have helped our clients achieve their goals.</p>
+        </div>
+
+        <div class="gallery-filter-tabs">
+            <button class="gallery-filter-btn active" data-filter="all">All Projects</button>
+            <button class="gallery-filter-btn" data-filter="road">Road Construction</button>
+            <button class="gallery-filter-btn" data-filter="geotechnical">Geotechnical and ground testing</button>
+            <button class="gallery-filter-btn" data-filter="structural">Structural Engineering</button>
+            <!-- <button class="gallery-filter-btn" data-filter="water">Water and irrigation Engineering</button> -->
+            <button class="gallery-filter-btn view-more-btn" id="viewMoreBtn">View More</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery">
+            <!-- Gallery items will be populated by JavaScript -->
+        </div>
+
+        <button class="load-more-btn" id="loadMore">Load More Projects</button>
+    </section>
+
+    <!-- Modal for additional filters -->
+    <div class="modal-overlay" id="filterModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Select Project Category</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-filters" id="modalFilters">
+                <!-- Additional filter options will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+<!--Footer Section -->
+<footer class="euler-footer">
+        <div class="euler-footer-container">
+            <div class="euler-footer-content">
+                <!-- Company Info Section -->
+                <div class="euler-footer-section euler-footer-company-info">
+                    <a href="/" class="euler-footer-logo">
+                        <img src="assets/logo_transparent-1.png">
+                        <div class="euler-footer-logo-text">
+                            <h2>Euler</h2>
+                            <p>Civil Limited</p>
+                        </div>
+                    </a>
+                    <div class="euler-footer-description">
+                        We're committed to elevating the construction experience for our clients. With a passion for innovation and quality craftsmanship,
+                    </div>
+                    <div class="euler-footer-social-links">
+                        <a href="https://www.facebook.com/share/1JCtYVh3xr/" target="_blank aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/mjsipatela?s=09" target="_blank aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://vm.tiktok.com/ZMSsy2naC/" target="_blank aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mcpherson-j-sipatela-r-eng-pr-eng-meiz-engrb-89565261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="euler-footer-section euler-footer-contact-info">
+                    <h3>Contact Us</h3>
+                    <div class="euler-footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>+260 765003880</div>
+                    </div>
+                    <div class="euler-footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>eulercivil2019@gmail.com</div>
+                    </div>
+                    <div class="euler-footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            Chalala Lusaka, Lusaka,<br>
+                            Zambia
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Services Section -->
+                <div class="euler-footer-section euler-footer-services">
+                    <h3>Quick Services</h3>
+                    <ul class="euler-footer-services-list">
+                        <li><a href="#road-construction">Road construction and Earthworks</a></li>
+                        <li><a href="#geotechnical-testing">Geotechnical and ground testing</a></li>
+                        <li><a href="#concrete-tests">Concrete tests</a></li>
+                        <li><a href="#civil-engineering">Civil engineering drawings</a></li>
+                        <li><a href="#water-engineering">Water and irrigation engineering</a></li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours Section -->
+                <div class="euler-footer-section euler-footer-hours-info">
+                    <h3>Opening Hours</h3>
+                    <div class="euler-footer-hours-item">
+                        <i class="far fa-clock"></i>
+                        <div>
+                            <div class="euler-footer-day">Monday - Friday</div>
+                            <div class="euler-footer-time">8:00 AM - 5:00 PM</div>
+                        </div>
+                    </div>
+                    <div class="euler-footer-hours-item">
+                        <i class="far fa-clock"></i>
+                        <div>
+                            <div class="euler-footer-day">Saturday</div>
+                            <div class="euler-footer-time">8:30 AM - 12:30 PM</div>
+                        </div>
+                    </div>
+                    <div class="euler-footer-hours-item euler-footer-closed">
+                        <i class="far fa-clock"></i>
+                        <div>
+                            <div class="euler-footer-day">Sunday</div>
+                            <div class="euler-footer-time">CLOSED</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="euler-footer-bottom">
+                <p>Copyright © 2025 Euler Civil limited All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

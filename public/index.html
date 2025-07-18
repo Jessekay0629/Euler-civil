@@ -58,11 +58,11 @@
             
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT US</a></li>
+                    <li><a href="#services-home">SERVICES</a></li>
+                    <li><a href="/projects">PROJECTS</a></li>
+                    <li><a href="/faq">FAQ</a></li>
                 </ul>
             </nav>
             
@@ -73,40 +73,40 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="main-hero-banner">
         <!-- Background Slider -->
-        <div class="hero-slider">
-            <div class="swiper heroSwiper">
+        <div class="main-hero-slider-wrap">
+            <div class="swiper main-hero-swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide slide-1"></div>
-                    <div class="swiper-slide slide-2"></div>
-                    <div class="swiper-slide slide-3"></div>
+                    <div class="swiper-slide main-hero-slide-primary"></div>
+                    <div class="swiper-slide main-hero-slide-secondary"></div>
+                    <div class="swiper-slide main-hero-slide-tertiary"></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
 
         <!-- Transparent Overlay Image -->
-        <div class="hero-overlay"></div>
+        <div class="main-hero-overlay-img"></div>
 
         <!-- Hero Content -->
-        <div class="hero-content">
-            <div class="hero-text-wrapper">
-                <div class="hero-badge">
+        <div class="main-hero-content-area">
+            <div class="main-hero-text-container">
+                <div class="main-hero-tag-label">
                     Build With Confidence
                 </div>
-                <h1 class="hero-title">
+                <h1 class="main-hero-primary-heading">
                     YOUR DREAM SPACE<br>
-                    EXPERTLY <span class="highlight">CRAFTED</span>
+                    EXPERTLY <span class="main-hero-highlight-text">CRAFTED</span>
                 </h1>
-                <p class="hero-description">
+                <p class="main-hero-description-text">
                     From concept to completion, we bring your vision to life with precision, passion, and professionalism. Whether it's a home, office, or commercial space- we build it right.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#services" class="btn-primary">
+                <div class="main-hero-action-buttons">
+                    <a href="#services" class="main-hero-btn-primary">
                         OUR SERVICES <i class="las la-arrow-right"></i>
                     </a>
-                    <a href="#contact" class="btn-secondary">
+                    <a href="#contact" class="main-hero-btn-secondary">
                         CONTACT US <i class="las la-arrow-right"></i>
                     </a>
                 </div>
@@ -114,11 +114,11 @@
         </div>
         
         <!-- Manual Navigation Controls -->
-        <div class="nav-controls">
-            <button class="nav-arrow swiper-button-next-custom">
+        <div class="main-hero-nav-controls">
+            <button class="main-hero-nav-arrow main-hero-next-btn">
                 <i class="las la-arrow-right"></i>
             </button>
-            <button class="nav-arrow swiper-button-prev-custom">
+            <button class="main-hero-nav-arrow main-hero-prev-btn">
                 <i class="las la-arrow-left"></i>
             </button>
         </div>
@@ -171,140 +171,168 @@
         </div>
     </section>
 
-<section class="services-section">
-        <div class="services-wrapper">
+<section id="services-home" class="prof-services-main-section">
+        <div class="prof-services-container-wrap">
             <!-- Header -->
-            <div class="services-header">
-                <div class="services-badge">SERVICES</div>
-                <h2 class="services-title">Our Professional Services</h2>
+            <div class="prof-services-header-area">
+                <div class="prof-services-label-badge">SERVICES</div>
+                <h2 class="prof-services-main-heading">Our Professional Services</h2>
             </div>
 
             <!-- Services Slider -->
-            <div class="services-slider">
-                <div class="swiper services-swiper">
+            <div class="prof-services-carousel-wrap">
+                <div class="swiper prof-services-swiper-container">
                     <div class="swiper-wrapper">
                         <!-- Service 1 -->
                         <div class="swiper-slide">
-                            <div class="service-card">
-                                <div class="service-image service-1"></div>
-                                <div class="service-content">
-                                    <h3 class="service-title">Road construction and Earthworks</h3>
-                                    <p class="service-description">
-                                        Ut enim ad minim veniam, quis nostrud ex exercitation ullamco laboris nisi ut aliquip ea commodo consequat.
+                            <div class="prof-services-item-card">
+                                <div class="prof-services-item-image prof-services-img-ext"></div>
+                                <div class="prof-services-item-content">
+                                    <h3 class="prof-services-item-title">Road Construction and Earthworks</h3>
+                                    <p class="prof-services-item-desc">
+                                        We deliver durable road networks and precise earthworks using modern machinery, ensuring safe, smooth, and long-lasting infrastructure.
                                     </p>
-                                    <a href="#" class="service-link">Read More</a>
+                                    <a href="#" class="prof-services-item-link">Read More</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Service 2 -->
                         <div class="swiper-slide">
-                            <div class="service-card">
-                                <div class="service-image service-2"></div>
-                                <div class="service-content">
-                                    <h3 class="service-title">Geotechnical and ground testing</h3>
-                                    <p class="service-description">
-                                        Ut enim ad minim veniam, quis nostrud ex exercitation ullamco laboris nisi ut aliquip ea commodo consequat.
+                            <div class="prof-services-item-card">
+                                <div class="prof-services-item-image prof-services-ground"></div>
+                                <div class="prof-services-item-content">
+                                    <h3 class="prof-services-item-title">Geotechnical and ground testing</h3>
+                                    <p class="prof-services-item-desc">
+                                        Our ground testing services provide reliable soil data for safe and stable structural designs tailored to your project’s needs.
                                     </p>
-                                    <a href="#" class="service-link">Read More</a>
+                                    <a href="#" class="prof-services-item-link">Read More</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Service 3 -->
                         <div class="swiper-slide">
-                            <div class="service-card">
-                                <div class="service-image service-3"></div>
-                                <div class="service-content">
-                                    <h3 class="service-title">Concrete tests</h3>
-                                    <p class="service-description">
-                                        Ut enim ad minim veniam, quis nostrud ex exercitation ullamco laboris nisi ut aliquip ea commodo consequat.
+                            <div class="prof-services-item-card">
+                                <div class="prof-services-item-image prof-services-concrete"></div>
+                                <div class="prof-services-item-content">
+                                    <h3 class="prof-services-item-title">Concrete tests</h3>
+                                    <p class="prof-services-item-desc">
+                                        We carry out accurate concrete strength and quality tests, ensuring your structures meet safety and durability standards.
                                     </p>
-                                    <a href="#" class="service-link">Read More</a>
+                                    <a href="#" class="prof-services-item-link">Read More</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Service 4 -->
                         <div class="swiper-slide">
-                            <div class="service-card">
-                                <div class="service-image service-4"></div>
-                                <div class="service-content">
-                                    <h3 class="service-title">Civil engineering drawings</h3>
-                                    <p class="service-description">
-                                        Transform your living spaces with our comprehensive interior renovation services and modern design solutions.
+                            <div class="prof-services-item-card">
+                                <div class="prof-services-item-image prof-services-drawing"></div>
+                                <div class="prof-services-item-content">
+                                    <h3 class="prof-services-item-title">Civil engineering drawings</h3>
+                                    <p class="prof-services-item-desc">
+                                        We prepare clear, compliant, and detailed engineering drawings to guide every stage of your construction project.
                                     </p>
-                                    <a href="#" class="service-link">Read More</a>
+                                    <a href="#" class="prof-services-item-link">Read More</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Service 5 -->
                         <div class="swiper-slide">
-                            <div class="service-card">
-                                <div class="service-image service-5"></div>
-                                <div class="service-content">
-                                    <h3 class="service-title">Water and irrigation engineering</h3>
-                                    <p class="service-description">
-                                        Professional commercial building services for offices, retail spaces, and industrial facilities with quality assurance.
+                            <div class="prof-services-item-card">
+                                <div class="prof-services-item-image prof-services-water"></div>
+                                <div class="prof-services-item-content">
+                                    <h3 class="prof-services-item-title">Water and irrigation engineering</h3>
+                                    <p class="prof-services-item-desc">
+                                        We design and implement efficient water systems that improve supply, drainage, and irrigation performance on any scale.
                                     </p>
-                                    <a href="#" class="service-link">Read More</a>
+                                    <a href="#" class="prof-services-item-link">Read More</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Service 6 -->
                         <div class="swiper-slide">
-                            <div class="service-card">
-                                <div class="service-image service-6"></div>
-                                <div class="service-content">
-                                    <h3 class="service-title">Mining and survey  engineering services</h3>
-                                    <p class="service-description">
-                                        Complete plumbing installation, repair, and maintenance services for residential and commercial properties.
+                            <div class="prof-services-item-card">
+                                <div class="prof-services-item-image prof-services-survey"></div>
+                                <div class="prof-services-item-content">
+                                    <h3 class="prof-services-item-title">Mining and survey  engineering services</h3>
+                                    <p class="prof-services-item-desc">
+                                        From mineral mapping to site surveys, we provide essential data to support your mining and exploration activities.
                                     </p>
-                                    <a href="#" class="service-link">Read More</a>
+                                    <a href="#" class="prof-services-item-link">Read More</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Service 7 -->
                         <div class="swiper-slide">
-                            <div class="service-card">
-                                <div class="service-image service-7"></div>
-                                <div class="service-content">
-                                    <h3 class="service-title">Project management</h3>
-                                    <p class="service-description">
-                                        Expert roofing installation, repair, and maintenance using premium materials and proven techniques.
+                            <div class="prof-services-item-card">
+                                <div class="prof-services-item-image prof-services-project"></div>
+                                <div class="prof-services-item-content">
+                                    <h3 class="prof-services-item-title">Project management</h3>
+                                    <p class="prof-services-item-desc">
+                                        Our team oversees all project stages—planning, execution, and delivery—to ensure timely, cost-effective results.
                                     </p>
-                                    <a href="#" class="service-link">Read More</a>
+                                    <a href="#" class="prof-services-item-link">Read More</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Service 8 -->
                         <div class="swiper-slide">
-                            <div class="service-card">
-                                <div class="service-image service-8"></div>
-                                <div class="service-content">
-                                    <h3 class="service-title">Structural engineering and building projects</h3>
-                                    <p class="service-description">
-                                        Solid foundation construction and repair services ensuring the structural integrity of your building projects.
+                            <div class="prof-services-item-card">
+                                <div class="prof-services-item-image prof-services-structure"></div>
+                                <div class="prof-services-item-content">
+                                    <h3 class="prof-services-item-title">Structural Engineering and Building Projects</h3>
+                                    <p class="prof-services-item-desc">
+                                        We design and manage structural systems that are both functional and resilient for residential, commercial, or industrial use.
                                     </p>
-                                    <a href="#" class="service-link">Read More</a>
+                                    <a href="#" class="prof-services-item-link">Read More</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Service 9 -->
                         <div class="swiper-slide">
-                            <div class="service-card">
-                                <div class="service-image service-9"></div>
-                                <div class="service-content">
-                                    <h3 class="service-title">Construction equipment hire services</h3>
-                                    <p class="service-description">
-                                        End-to-end project management services ensuring timely delivery and quality execution of construction projects.
+                            <div class="prof-services-item-card">
+                                <div class="prof-services-item-image prof-services-equipment"></div>
+                                <div class="prof-services-item-content">
+                                    <h3 class="prof-services-item-title">Construction Equipment Hire Services</h3>
+                                    <p class="prof-services-item-desc">
+                                        We offer a wide range of well-maintained construction machinery for hire, ensuring reliable performance on your site.
                                     </p>
-                                    <a href="#" class="service-link">Read More</a>
+                                    <a href="#" class="prof-services-item-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 10 -->
+                        <div class="swiper-slide">
+                            <div class="prof-services-item-card">
+                                <div class="prof-services-item-image prof-services-supply"></div>
+                                <div class="prof-services-item-content">
+                                    <h3 class="prof-services-item-title">General Supply of Goods and Services</h3>
+                                    <p class="prof-services-item-desc">
+                                        We source and deliver quality materials, tools, and services on time, supporting smooth operations across all project phases.
+                                    </p>
+                                    <a href="#" class="prof-services-item-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 11 -->
+                        <div class="swiper-slide">
+                            <div class="prof-services-item-card">
+                                <div class="prof-services-item-image prof-services-transport"></div>
+                                <div class="prof-services-item-content">
+                                    <h3 class="prof-services-item-title">Transportation Services</h3>
+                                    <p class="prof-services-item-desc">
+                                        Our reliable transport fleet ensures safe and timely delivery of materials, equipment, and personnel to your project sites.
+                                    </p>
+                                    <a href="#" class="prof-services-item-link">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -312,13 +340,123 @@
                 </div>
 
                 <!-- Navigation -->
-                <div class="services-navigation">
-                    <button class="services-nav-btn services-prev">‹</button>
-                    <button class="services-nav-btn services-next">›</button>
+                <div class="prof-services-nav-controls">
+                    <button class="prof-services-nav-arrow prof-services-prev-btn">‹</button>
+                    <button class="prof-services-nav-arrow prof-services-next-btn">›</button>
                 </div>
             </div>
         </div>
     </section>
+
+<!--Project gallery cta Section -->
+    <section class="project-gallery-cta">
+        <div class="project-cta-content">
+            <div class="project-cta-text">
+                <h1 class="project-cta-title">Blueprints to bricks, guided decisions every step of the way.</h1>
+                <a href="/projects" class="project-cta-button">
+                    VIEW ALL PROJECTS
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!--Footer Section -->
+<footer class="euler-footer">
+        <div class="euler-footer-container">
+            <div class="euler-footer-content">
+                <!-- Company Info Section -->
+                <div class="euler-footer-section euler-footer-company-info">
+                    <a href="/" class="euler-footer-logo">
+                        <img src="assets/logo_transparent-1.png">
+                        <div class="euler-footer-logo-text">
+                            <h2>Euler</h2>
+                            <p>Civil Limited</p>
+                        </div>
+                    </a>
+                    <div class="euler-footer-description">
+                        We're committed to elevating the construction experience for our clients. With a passion for innovation and quality craftsmanship,
+                    </div>
+                    <div class="euler-footer-social-links">
+                        <a href="https://www.facebook.com/share/1JCtYVh3xr/" target="_blank aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/mjsipatela?s=09" target="_blank aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://vm.tiktok.com/ZMSsy2naC/" target="_blank aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mcpherson-j-sipatela-r-eng-pr-eng-meiz-engrb-89565261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="euler-footer-section euler-footer-contact-info">
+                    <h3>Contact Us</h3>
+                    <div class="euler-footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>+260 765003880</div>
+                    </div>
+                    <div class="euler-footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>eulercivil2019@gmail.com</div>
+                    </div>
+                    <div class="euler-footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            Chalala Lusaka, Lusaka,<br>
+                            Zambia
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Services Section -->
+                <div class="euler-footer-section euler-footer-services">
+                    <h3>Quick Services</h3>
+                    <ul class="euler-footer-services-list">
+                        <li><a href="#road-construction">Road construction and Earthworks</a></li>
+                        <li><a href="#geotechnical-testing">Geotechnical and ground testing</a></li>
+                        <li><a href="#concrete-tests">Concrete tests</a></li>
+                        <li><a href="#civil-engineering">Civil engineering drawings</a></li>
+                        <li><a href="#water-engineering">Water and irrigation engineering</a></li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours Section -->
+                <div class="euler-footer-section euler-footer-hours-info">
+                    <h3>Opening Hours</h3>
+                    <div class="euler-footer-hours-item">
+                        <i class="far fa-clock"></i>
+                        <div>
+                            <div class="euler-footer-day">Monday - Friday</div>
+                            <div class="euler-footer-time">8:00 AM - 5:00 PM</div>
+                        </div>
+                    </div>
+                    <div class="euler-footer-hours-item">
+                        <i class="far fa-clock"></i>
+                        <div>
+                            <div class="euler-footer-day">Saturday</div>
+                            <div class="euler-footer-time">8:30 AM - 12:30 PM</div>
+                        </div>
+                    </div>
+                    <div class="euler-footer-hours-item euler-footer-closed">
+                        <i class="far fa-clock"></i>
+                        <div>
+                            <div class="euler-footer-day">Sunday</div>
+                            <div class="euler-footer-time">CLOSED</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="euler-footer-bottom">
+                <p>Copyright © 2025 Euler Civil limited All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- JavaScript -->
 

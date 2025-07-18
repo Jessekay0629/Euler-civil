@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////
-        document.addEventListener('DOMContentLoaded', function() {
-            const servicesSwiper = new Swiper('.services-swiper', {
+document.addEventListener('DOMContentLoaded', function() {
+            const profServicesSwiper = new Swiper('.prof-services-swiper-container', {
                 // Slides per view
                 slidesPerView: 1,
                 spaceBetween: 30,
@@ -16,8 +16,8 @@
                 
                 // Navigation
                 navigation: {
-                    nextEl: '.services-next',
-                    prevEl: '.services-prev',
+                    nextEl: '.prof-services-next-btn',
+                    prevEl: '.prof-services-prev-btn',
                 },
                 
                 // Responsive breakpoints
@@ -40,20 +40,20 @@
             });
 
             // Pause autoplay on hover
-            const swiperContainer = document.querySelector('.services-swiper');
+            const swiperContainer = document.querySelector('.prof-services-swiper-container');
             swiperContainer.addEventListener('mouseenter', () => {
-                servicesSwiper.autoplay.stop();
+                profServicesSwiper.autoplay.stop();
             });
             
             swiperContainer.addEventListener('mouseleave', () => {
-                servicesSwiper.autoplay.start();
+                profServicesSwiper.autoplay.start();
             });
         });
 
 
 /////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', function() {
-            const swiper = new Swiper('.heroSwiper', {
+            const mainHeroSwiper = new Swiper('.main-hero-swiper-container', {
                 // Auto-play configuration
                 autoplay: {
                     delay: 5000,
@@ -77,8 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Custom navigation buttons
                 navigation: {
-                    nextEl: '.swiper-button-next-custom',
-                    prevEl: '.swiper-button-prev-custom',
+                    nextEl: '.main-hero-next-btn',
+                    prevEl: '.main-hero-prev-btn',
                 },
                 
                 // Transition speed
