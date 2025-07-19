@@ -18,7 +18,7 @@ router.post('/send-email', (req, res) => {
   const mailOptions = {
     from: `"${fullName}" <site.contactform01@gmail.com>`,
     replyTo: `"${fullName}" <${email}>`,
-    to: "jessekayombo09@gmail.com",  // Where you want to receive the emails
+    to: "eulercivil2019@gmail.com",  // Where you want to receive the emails
     subject: `Website Contact Form Submission from ${fullName}`,
     messageId: `<form-${Date.now()}-${Math.random().toString(36).substring(2, 15)}@yourdomain.com>`,
     headers: {
