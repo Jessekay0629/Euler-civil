@@ -10,13 +10,13 @@ router.post('/send-email', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'contactform.toplife@gmail.com',  // Your form email
-      pass: 'rrva dmxp nmzu jphu'             // App password (never share publicly)
+      user: 'site.contactform01@gmail.com',  // Your form email
+      pass: 'mrld pelh yeav aqtq'             // App password (never share publicly)
     }
   });
 
   const mailOptions = {
-    from: `"${fullName}" <contactform.toplife@gmail.com>`,
+    from: `"${fullName}" <site.contactform01@gmail.com>`,
     replyTo: `"${fullName}" <${email}>`,
     to: "jessekayombo09@gmail.com",  // Where you want to receive the emails
     subject: `Website Contact Form Submission from ${fullName}`,
