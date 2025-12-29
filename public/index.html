@@ -26,25 +26,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
 </head>
 <body>
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
     <!-- Header Top Bar -->
-    <div class="header-top">
-        <div class="container">
-            <div class="contact-info">
-                <div class="contact-item">
+    <div class="euler-header-top">
+        <div class="euler-header-top-container">
+            <div class="euler-contact-info">
+                <div class="euler-contact-item">
                     <i class="las la-phone"></i>
                     <span>(+260) 966916832 / 977421779</span>
                 </div>
-                
-                <div class="contact-item">
+                <div class="euler-contact-item">
                     <i class="las la-envelope"></i>
                     <span>eulercivil2019@gmail.com</span>
                 </div>
-                <div class="contact-item">
+                <div class="euler-contact-item">
                     <i class="las la-clock"></i>
                     <span>Mon-Fri: 8am-5pm | Sat: 8am-12.30 | Sunday: Off</span>
                 </div>
             </div>
-            <div class="social-links">
+            <div class="euler-social-links">
                 <a href="#"><i class="lab la-facebook-f"></i></a>
             </div>
         </div>
@@ -57,9 +59,15 @@
                 <img src="assets/Logo-copy.jpeg" alt="Euler Civil Ltd Logo">
             </div>
             
-            <nav class="main-nav">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
                 <ul>
-                    <li><a href="/">HOME</a></li>
+                    <li><a href="/" class="active">HOME</a></li>
                     <li><a href="/about">ABOUT US</a></li>
                     <li><a href="#services-home">SERVICES</a></li>
                     <li><a href="/projects">PROJECTS</a></li>
@@ -502,7 +510,50 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        const mobileOverlay = document.getElementById('mobileOverlay');
 
+        // Toggle mobile menu
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            mainNav.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Close menu when clicking overlay
+        mobileOverlay.addEventListener('click', () => {
+            mobileMenuBtn.classList.remove('active');
+            mainNav.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Close menu when clicking a link
+        const navLinks = document.querySelectorAll('.main-nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    mobileMenuBtn.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    mobileOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
     <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
         <script>
           var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"260977421779","zIndex":999999,"btnColorScheme":"light"};
