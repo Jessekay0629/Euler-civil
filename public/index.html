@@ -1,81 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Euler Civil Limited - Experience A Feel Of Engineering">
     <title>Euler Civil Limited</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="assets/Logo.jpeg">
     <!-- Line Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
     <!-- Swiper CSS for Background Slider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
 </head>
+
 <body>
+
     <!-- Mobile Overlay -->
-    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="ecl-mobile-overlay" id="eclMobileOverlay"></div>
 
     <!-- Header Top Bar -->
-    <div class="euler-header-top">
-        <div class="euler-header-top-container">
-            <div class="euler-contact-info">
-                <div class="euler-contact-item">
+    <div class="ecl-topbar">
+        <div class="ecl-topbar-container">
+            <div class="ecl-topbar-contact">
+                <div class="ecl-topbar-item">
                     <i class="las la-phone"></i>
                     <span>(+260) 966916832 / 977421779</span>
                 </div>
-                <div class="euler-contact-item">
+                <div class="ecl-topbar-item">
                     <i class="las la-envelope"></i>
                     <span>eulercivil2019@gmail.com</span>
                 </div>
-                <div class="euler-contact-item">
+                <div class="ecl-topbar-item ecl-topbar-hours">
                     <i class="las la-clock"></i>
                     <span>Mon-Fri: 8am-5pm | Sat: 8am-12.30 | Sunday: Off</span>
                 </div>
             </div>
-            <div class="euler-social-links">
+            <div class="ecl-topbar-social">
                 <a href="#"><i class="lab la-facebook-f"></i></a>
             </div>
         </div>
     </div>
 
     <!-- Main Header -->
-    <header class="main-header">
-        <div class="header-content">
-            <div class="logo">
-                <img src="assets/Logo-copy.jpeg" alt="Euler Civil Ltd Logo">
+    <header class="ecl-header">
+        <div class="ecl-header-inner">
+            <div class="ecl-logo-wrap">
+                <img src="assets/Logo-copy.jpeg" alt="Euler Civil Ltd Logo" class="ecl-logo-img">
             </div>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
+
+            <button class="ecl-hamburger" id="eclHamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <nav class="main-nav" id="mainNav">
-                <ul>
-                    <li><a href="/" class="active">HOME</a></li>
-                    <li><a href="/about">ABOUT US</a></li>
-                    <li><a href="#services-home">SERVICES</a></li>
-                    <li><a href="/projects">PROJECTS</a></li>
-                    <li><a href="/faq">FAQ</a></li>
+            <nav class="ecl-nav" id="eclNav">
+                <ul class="ecl-nav-list">
+                    <li><a href="/" class="ecl-nav-link ecl-nav-active">HOME</a></li>
+                    <li><a href="/about" class="ecl-nav-link">ABOUT US</a></li>
+                    <li><a href="#services-home" class="ecl-nav-link">SERVICES</a></li>
+                    <li><a href="/projects" class="ecl-nav-link">PROJECTS</a></li>
+                    <li><a href="/faq" class="ecl-nav-link">FAQ</a></li>
                 </ul>
+                <a href="/contact" class="ecl-nav-cta">CONTACT US <i class="las la-arrow-right"></i></a>
             </nav>
-            
-            <a href="/contact" class="cta-button">
+
+            <a href="/contact" class="ecl-header-cta">
                 CONTACT US <i class="las la-arrow-right"></i>
             </a>
         </div>
@@ -109,7 +114,8 @@
                     EXPERTLY <span class="main-hero-highlight-text">CRAFTED</span>
                 </h1>
                 <p class="main-hero-description-text">
-                    From concept to completion, we bring your vision to life with precision, passion, and professionalism. Whether it's a home, office, or commercial space- we build it right.
+                    From concept to completion, we bring your vision to life with precision, passion, and
+                    professionalism. Whether it's a home, office, or commercial space- we build it right.
                 </p>
                 <div class="main-hero-action-buttons">
                     <a href="/#services-home" class="main-hero-btn-primary">
@@ -121,7 +127,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Manual Navigation Controls -->
         <div class="main-hero-nav-controls">
             <button class="main-hero-nav-arrow main-hero-next-btn">
@@ -133,7 +139,7 @@
         </div>
     </section>
 
-<section class="about-section">
+    <section class="about-section">
         <div class="about-wrapper">
             <div class="about-grid">
                 <!-- Left Side - Image with Projects Badge -->
@@ -147,11 +153,12 @@
                 <!-- Right Side - Content -->
                 <div class="about-text">
                     <div class="about-section-badge">ABOUT US</div>
-                    
+
                     <h2 class="about-title">Our Modern Construction Agency</h2>
-                    
+
                     <p class="about-description">
-                        We are a trusted construction company focused on creating durable, functional, and beautiful spaces that reflect your vision and meet your highest expectations.
+                        We are a trusted construction company focused on creating durable, functional, and beautiful
+                        spaces that reflect your vision and meet your highest expectations.
                     </p>
 
                     <ul class="about-skills-list">
@@ -180,7 +187,7 @@
         </div>
     </section>
 
-<section id="services-home" class="prof-services-main-section">
+    <section id="services-home" class="prof-services-main-section">
         <div class="prof-services-container-wrap">
             <!-- Header -->
             <div class="prof-services-header-area">
@@ -199,7 +206,8 @@
                                 <div class="prof-services-item-content">
                                     <h3 class="prof-services-item-title">Road Construction and Earthworks</h3>
                                     <p class="prof-services-item-desc">
-                                        We deliver durable road networks and precise earthworks using modern machinery, ensuring safe, smooth, and long-lasting infrastructure.
+                                        We deliver durable road networks and precise earthworks using modern machinery,
+                                        ensuring safe, smooth, and long-lasting infrastructure.
                                     </p>
                                     <a href="/service-1" class="prof-services-item-link">Read More</a>
                                 </div>
@@ -213,7 +221,8 @@
                                 <div class="prof-services-item-content">
                                     <h3 class="prof-services-item-title">Geotechnical and ground testing</h3>
                                     <p class="prof-services-item-desc">
-                                        Our ground testing services provide reliable soil data for safe and stable structural designs tailored to your project’s needs.
+                                        Our ground testing services provide reliable soil data for safe and stable
+                                        structural designs tailored to your project’s needs.
                                     </p>
                                     <a href="/service-2" class="prof-services-item-link">Read More</a>
                                 </div>
@@ -227,7 +236,8 @@
                                 <div class="prof-services-item-content">
                                     <h3 class="prof-services-item-title">Concrete tests</h3>
                                     <p class="prof-services-item-desc">
-                                        We carry out accurate concrete strength and quality tests, ensuring your structures meet safety and durability standards.
+                                        We carry out accurate concrete strength and quality tests, ensuring your
+                                        structures meet safety and durability standards.
                                     </p>
                                     <a href="/service-3" class="prof-services-item-link">Read More</a>
                                 </div>
@@ -241,7 +251,8 @@
                                 <div class="prof-services-item-content">
                                     <h3 class="prof-services-item-title">Civil engineering drawings</h3>
                                     <p class="prof-services-item-desc">
-                                        We prepare clear, compliant, and detailed engineering drawings to guide every stage of your construction project.
+                                        We prepare clear, compliant, and detailed engineering drawings to guide every
+                                        stage of your construction project.
                                     </p>
                                     <a href="/service-4" class="prof-services-item-link">Read More</a>
                                 </div>
@@ -255,7 +266,8 @@
                                 <div class="prof-services-item-content">
                                     <h3 class="prof-services-item-title">Water and irrigation engineering</h3>
                                     <p class="prof-services-item-desc">
-                                        We design and implement efficient water systems that improve supply, drainage, and irrigation performance on any scale.
+                                        We design and implement efficient water systems that improve supply, drainage,
+                                        and irrigation performance on any scale.
                                     </p>
                                     <a href="/service-5" class="prof-services-item-link">Read More</a>
                                 </div>
@@ -267,9 +279,10 @@
                             <div class="prof-services-item-card">
                                 <div class="prof-services-item-image prof-services-survey"></div>
                                 <div class="prof-services-item-content">
-                                    <h3 class="prof-services-item-title">Mining and survey  engineering services</h3>
+                                    <h3 class="prof-services-item-title">Mining and survey engineering services</h3>
                                     <p class="prof-services-item-desc">
-                                        From mineral mapping to site surveys, we provide essential data to support your mining and exploration activities.
+                                        From mineral mapping to site surveys, we provide essential data to support your
+                                        mining and exploration activities.
                                     </p>
                                     <a href="/service-6" class="prof-services-item-link">Read More</a>
                                 </div>
@@ -283,7 +296,8 @@
                                 <div class="prof-services-item-content">
                                     <h3 class="prof-services-item-title">Project management</h3>
                                     <p class="prof-services-item-desc">
-                                        Our team oversees all project stages—planning, execution, and delivery—to ensure timely, cost-effective results.
+                                        Our team oversees all project stages—planning, execution, and delivery—to ensure
+                                        timely, cost-effective results.
                                     </p>
                                     <a href="/service-7" class="prof-services-item-link">Read More</a>
                                 </div>
@@ -295,9 +309,11 @@
                             <div class="prof-services-item-card">
                                 <div class="prof-services-item-image prof-services-structure"></div>
                                 <div class="prof-services-item-content">
-                                    <h3 class="prof-services-item-title">Structural Engineering and Building Projects</h3>
+                                    <h3 class="prof-services-item-title">Structural Engineering and Building Projects
+                                    </h3>
                                     <p class="prof-services-item-desc">
-                                        We design and manage structural systems that are both functional and resilient for residential, commercial, or industrial use.
+                                        We design and manage structural systems that are both functional and resilient
+                                        for residential, commercial, or industrial use.
                                     </p>
                                     <a href="/service-8" class="prof-services-item-link">Read More</a>
                                 </div>
@@ -311,7 +327,8 @@
                                 <div class="prof-services-item-content">
                                     <h3 class="prof-services-item-title">Construction Equipment Hire Services</h3>
                                     <p class="prof-services-item-desc">
-                                        We offer a wide range of well-maintained construction machinery for hire, ensuring reliable performance on your site.
+                                        We offer a wide range of well-maintained construction machinery for hire,
+                                        ensuring reliable performance on your site.
                                     </p>
                                     <a href="/service-9" class="prof-services-item-link">Read More</a>
                                 </div>
@@ -325,7 +342,8 @@
                                 <div class="prof-services-item-content">
                                     <h3 class="prof-services-item-title">General Supply of Goods and Services</h3>
                                     <p class="prof-services-item-desc">
-                                        We source and deliver quality materials, tools, and services on time, supporting smooth operations across all project phases.
+                                        We source and deliver quality materials, tools, and services on time, supporting
+                                        smooth operations across all project phases.
                                     </p>
                                     <a href="/service-10" class="prof-services-item-link">Read More</a>
                                 </div>
@@ -339,7 +357,8 @@
                                 <div class="prof-services-item-content">
                                     <h3 class="prof-services-item-title">Transportation Services</h3>
                                     <p class="prof-services-item-desc">
-                                        Our reliable transport fleet ensures safe and timely delivery of materials, equipment, and personnel to your project sites.
+                                        Our reliable transport fleet ensures safe and timely delivery of materials,
+                                        equipment, and personnel to your project sites.
                                     </p>
                                     <a href="/service-11" class="prof-services-item-link">Read More</a>
                                 </div>
@@ -357,7 +376,7 @@
         </div>
     </section>
 
-<!--Project gallery cta Section -->
+    <!--Project gallery cta Section -->
     <section class="project-gallery-cta">
         <div class="project-cta-content">
             <div class="project-cta-text">
@@ -369,8 +388,8 @@
         </div>
     </section>
 
-<!--Footer Section -->
-<footer class="euler-footer">
+    <!--Footer Section -->
+    <footer class="euler-footer">
         <div class="euler-footer-container">
             <div class="euler-footer-content">
                 <!-- Company Info Section -->
@@ -383,22 +402,25 @@
                         </div>
                     </a>
                     <div class="euler-footer-description">
-                        We're committed to elevating the construction experience for our clients. With a passion for innovation and quality craftsmanship,
+                        We're committed to elevating the construction experience for our clients. With a passion for
+                        innovation and quality craftsmanship,
                     </div>
                     <div class="euler-footer-social-links">
-                        <a href="https://www.facebook.com/share/1JCtYVh3xr/" target="_blank aria-label="Facebook">
+                        <a href="https://www.facebook.com/share/1JCtYVh3xr/" target="_blank aria-label=" Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://x.com/mjsipatela?s=09" target="_blank aria-label="Twitter">
+                        <a href="https://x.com/mjsipatela?s=09" target="_blank aria-label=" Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://vm.tiktok.com/ZMSsy2naC/" target="_blank aria-label="TikTok">
+                        <a href="https://vm.tiktok.com/ZMSsy2naC/" target="_blank aria-label=" TikTok">
                             <i class="fab fa-tiktok"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/mcpherson-j-sipatela-r-eng-pr-eng-meiz-engrb-89565261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/mcpherson-j-sipatela-r-eng-pr-eng-meiz-engrb-89565261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank aria-label=" LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://www.instagram.com/eulercivillimited?utm_source=qr&igsh=cXNpeGJubjFyZ3d3" target="_blank aria-label="Instagram">
+                        <a href="https://www.instagram.com/eulercivillimited?utm_source=qr&igsh=cXNpeGJubjFyZ3d3"
+                            target="_blank aria-label=" Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -487,14 +509,14 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const progressBars = entry.target.querySelectorAll('.about-skill-progress');
-                    
+
                     progressBars.forEach(bar => {
                         const width = bar.getAttribute('data-width');
                         setTimeout(() => {
                             bar.style.width = width + '%';
                         }, 200);
                     });
-                    
+
                     observer.unobserve(entry.target);
                 }
             });
@@ -511,34 +533,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mainNav = document.getElementById('mainNav');
-        const mobileOverlay = document.getElementById('mobileOverlay');
+        const eclHamburger = document.getElementById('eclHamburger');
+        const eclNav = document.getElementById('eclNav');
+        const eclOverlay = document.getElementById('eclMobileOverlay');
 
         // Toggle mobile menu
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenuBtn.classList.toggle('active');
-            mainNav.classList.toggle('active');
-            mobileOverlay.classList.toggle('active');
-            document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+        eclHamburger.addEventListener('click', () => {
+            eclHamburger.classList.toggle('ecl-active');
+            eclNav.classList.toggle('ecl-active');
+            eclOverlay.classList.toggle('ecl-active');
+            document.body.style.overflow = eclNav.classList.contains('ecl-active') ? 'hidden' : '';
         });
 
         // Close menu when clicking overlay
-        mobileOverlay.addEventListener('click', () => {
-            mobileMenuBtn.classList.remove('active');
-            mainNav.classList.remove('active');
-            mobileOverlay.classList.remove('active');
+        eclOverlay.addEventListener('click', () => {
+            eclHamburger.classList.remove('ecl-active');
+            eclNav.classList.remove('ecl-active');
+            eclOverlay.classList.remove('ecl-active');
             document.body.style.overflow = '';
         });
 
         // Close menu when clicking a link
-        const navLinks = document.querySelectorAll('.main-nav a');
-        navLinks.forEach(link => {
+        const eclNavLinks = document.querySelectorAll('.ecl-nav-link');
+        eclNavLinks.forEach(link => {
             link.addEventListener('click', () => {
-                if (window.innerWidth <= 768) {
-                    mobileMenuBtn.classList.remove('active');
-                    mainNav.classList.remove('active');
-                    mobileOverlay.classList.remove('active');
+                if (window.innerWidth <= 900) {
+                    eclHamburger.classList.remove('ecl-active');
+                    eclNav.classList.remove('ecl-active');
+                    eclOverlay.classList.remove('ecl-active');
                     document.body.style.overflow = '';
                 }
             });
@@ -546,21 +568,22 @@
 
         // Handle window resize
         window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) {
-                mainNav.classList.remove('active');
-                mobileMenuBtn.classList.remove('active');
-                mobileOverlay.classList.remove('active');
+            if (window.innerWidth > 900) {
+                eclNav.classList.remove('ecl-active');
+                eclHamburger.classList.remove('ecl-active');
+                eclOverlay.classList.remove('ecl-active');
                 document.body.style.overflow = '';
             }
         });
     </script>
     <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
-        <script>
-          var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"260977421779","zIndex":999999,"btnColorScheme":"light"};
-          window.onload = () => {
+    <script>
+        var wa_btnSetting = { "btnColor": "#16BE45", "ctaText": "", "cornerRadius": 40, "marginBottom": 20, "marginLeft": 20, "marginRight": 20, "btnPosition": "right", "whatsAppNumber": "260977421779", "zIndex": 999999, "btnColorScheme": "light" };
+        window.onload = () => {
             _waEmbed(wa_btnSetting);
-          };
-        </script>
-      
+        };
+    </script>
+
 </body>
+
 </html>

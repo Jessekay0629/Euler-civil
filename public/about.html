@@ -1,117 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Euler Civil Limited - Experience A Feel Of Engineering">
     <title>Euler Civil Limited</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/external.css">
     <link rel="icon" type="image/png" href="assets/Logo.jpeg">
     <!-- Line Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
     <!-- Swiper CSS for Background Slider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
 </head>
+
 <body>
+    <!-- Mobile Overlay -->
+    <div class="ecl-mobile-overlay" id="eclMobileOverlay"></div>
+
     <!-- Header Top Bar -->
-    <div class="header-top">
-        <div class="container">
-            <div class="contact-info">
-                <div class="contact-item">
+    <div class="ecl-topbar">
+        <div class="ecl-topbar-container">
+            <div class="ecl-topbar-contact">
+                <div class="ecl-topbar-item">
                     <i class="las la-phone"></i>
                     <span>(+260) 966916832 / 977421779</span>
                 </div>
-                
-                <div class="contact-item">
+                <div class="ecl-topbar-item">
                     <i class="las la-envelope"></i>
                     <span>eulercivil2019@gmail.com</span>
                 </div>
-                <div class="contact-item">
+                <div class="ecl-topbar-item ecl-topbar-hours">
                     <i class="las la-clock"></i>
                     <span>Mon-Fri: 8am-5pm | Sat: 8am-12.30 | Sunday: Off</span>
                 </div>
             </div>
-            <div class="social-links">
+            <div class="ecl-topbar-social">
                 <a href="#"><i class="lab la-facebook-f"></i></a>
             </div>
         </div>
     </div>
 
     <!-- Main Header -->
-    <header class="main-header">
-        <div class="header-content">
-            <div class="logo">
-                <img src="assets/Logo-copy.jpeg" alt="Euler Civil Ltd Logo">
+    <header class="ecl-header">
+        <div class="ecl-header-inner">
+            <div class="ecl-logo-wrap">
+                <img src="assets/Logo-copy.jpeg" alt="Euler Civil Ltd Logo" class="ecl-logo-img">
             </div>
-            
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/about">ABOUT US</a></li>
-                    <li><a href="/#services-home">SERVICES</a></li>
-                    <li><a href="/projects">PROJECTS</a></li>
-                    <li><a href="/faq">FAQ</a></li>
+
+            <button class="ecl-hamburger" id="eclHamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="ecl-nav" id="eclNav">
+                <ul class="ecl-nav-list">
+                    <li><a href="/" class="ecl-nav-link">HOME</a></li>
+                    <li><a href="/about" class="ecl-nav-link ecl-nav-active">ABOUT US</a></li>
+                    <li><a href="/#services-home" class="ecl-nav-link">SERVICES</a></li>
+                    <li><a href="/projects" class="ecl-nav-link">PROJECTS</a></li>
+                    <li><a href="/faq" class="ecl-nav-link">FAQ</a></li>
                 </ul>
+                <a href="/contact" class="ecl-nav-cta">CONTACT US <i class="las la-arrow-right"></i></a>
             </nav>
-            
-            <a href="/contact" class="cta-button">
+
+            <a href="/contact" class="ecl-header-cta">
                 CONTACT US <i class="las la-arrow-right"></i>
             </a>
         </div>
     </header>
 
-<!-- Page title --------------------------------------------------------------------------------------->
+    <!-- Page title --------------------------------------------------------------------------------------->
 
-<section class="page-title">
-  <div class="page-title-bg"></div>
-  <div class="title-container">
-      <div class="title-content">
-          <h1>About us</h1>
-          <div class="breadcrumb">
-              <a href="/">Home</a>
-              <span class="separator"><i class="las la-angle-right"></i></span>
-              <span class="current-page">About us</span>
-          </div>
-      </div>
-  </div>
-</section>
-<!--About us Section -->
-<section class="about-us">
-    <div class="about-container">
-        <div class="intro">
-            <h2>Welcome to <Span>Euler Civil</Span></h2>
-            <br>
-            <p>
-                 Euler Civil Limited was founded to deliver reliable and affordable building services for homes and businesses. Our experienced team is committed to quality workmanship, customer satisfaction, and timely project completion, while also supporting growth and development in the communities we serve.
-            </p>
-        </div>
-        <div class="mission-vision">
-            <div class="mission">
-                <h2>Our <span>Mission</span></h2>
-                <br>
-                <p>To build a legacy of excellence by delivering high-quality construction projects that exceed client expectations, foster employee growth, and contribute positively to the communities we serve.</p>
-            </div>
-            <div class="vision">
-                <h2>Our <span>Vision</span></h2>
-                <br>
-                <p> To be the leading construction company, known for innovation, quality, and client satisfaction both local and international</p>
+    <section class="page-title">
+        <div class="page-title-bg"></div>
+        <div class="title-container">
+            <div class="title-content">
+                <h1>About us</h1>
+                <div class="breadcrumb">
+                    <a href="/">Home</a>
+                    <span class="separator"><i class="las la-angle-right"></i></span>
+                    <span class="current-page">About us</span>
+                </div>
             </div>
         </div>
-        
-        <!-- Meet Our Team Section 
+    </section>
+    <!--About us Section -->
+    <section class="about-us">
+        <div class="about-container">
+            <div class="intro">
+                <h2>Welcome to <Span>Euler Civil</Span></h2>
+                <br>
+                <p>
+                    Euler Civil Limited was founded to deliver reliable and affordable building services for homes and
+                    businesses. Our experienced team is committed to quality workmanship, customer satisfaction, and
+                    timely project completion, while also supporting growth and development in the communities we serve.
+                </p>
+            </div>
+            <div class="mission-vision">
+                <div class="mission">
+                    <h2>Our <span>Mission</span></h2>
+                    <br>
+                    <p>To build a legacy of excellence by delivering high-quality construction projects that exceed
+                        client expectations, foster employee growth, and contribute positively to the communities we
+                        serve.</p>
+                </div>
+                <div class="vision">
+                    <h2>Our <span>Vision</span></h2>
+                    <br>
+                    <p> To be the leading construction company, known for innovation, quality, and client satisfaction
+                        both local and international</p>
+                </div>
+            </div>
+
+            <!-- Meet Our Team Section 
         <section class="meet-our-team">
             <div class="container">
                 <h2>Meet Our Team</h2>
@@ -121,14 +138,14 @@
             </div>
         </section> 
         -->
-        <div class="contact-us-btn">
-            <a class='contact-btn' href='/contact'>Contact Us</a>
+            <div class="contact-us-btn">
+                <a class='contact-btn' href='/contact'>Contact Us</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!--Footer Section -->
-<footer class="euler-footer">
+    <!--Footer Section -->
+    <footer class="euler-footer">
         <div class="euler-footer-container">
             <div class="euler-footer-content">
                 <!-- Company Info Section -->
@@ -141,22 +158,25 @@
                         </div>
                     </a>
                     <div class="euler-footer-description">
-                        We're committed to elevating the construction experience for our clients. With a passion for innovation and quality craftsmanship,
+                        We're committed to elevating the construction experience for our clients. With a passion for
+                        innovation and quality craftsmanship,
                     </div>
                     <div class="euler-footer-social-links">
-                        <a href="https://www.facebook.com/share/1JCtYVh3xr/" target="_blank aria-label="Facebook">
+                        <a href="https://www.facebook.com/share/1JCtYVh3xr/" target="_blank aria-label=" Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://x.com/mjsipatela?s=09" target="_blank aria-label="Twitter">
+                        <a href="https://x.com/mjsipatela?s=09" target="_blank aria-label=" Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://vm.tiktok.com/ZMSsy2naC/" target="_blank aria-label="TikTok">
+                        <a href="https://vm.tiktok.com/ZMSsy2naC/" target="_blank aria-label=" TikTok">
                             <i class="fab fa-tiktok"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/mcpherson-j-sipatela-r-eng-pr-eng-meiz-engrb-89565261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/mcpherson-j-sipatela-r-eng-pr-eng-meiz-engrb-89565261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank aria-label=" LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://www.instagram.com/eulercivillimited?utm_source=qr&igsh=cXNpeGJubjFyZ3d3" target="_blank aria-label="Instagram">
+                        <a href="https://www.instagram.com/eulercivillimited?utm_source=qr&igsh=cXNpeGJubjFyZ3d3"
+                            target="_blank aria-label=" Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -227,7 +247,7 @@
 
             <!-- Footer Bottom -->
             <div class="euler-footer-bottom">
-                <p>Copyright © 2025 Euler Civil limited All Rights Reserved.</p>
+                <p>Copyright © 2026 Euler Civil limited All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -238,12 +258,52 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        const eclHamburger = document.getElementById('eclHamburger');
+        const eclNav = document.getElementById('eclNav');
+        const eclOverlay = document.getElementById('eclMobileOverlay');
+
+        eclHamburger.addEventListener('click', () => {
+            eclHamburger.classList.toggle('ecl-active');
+            eclNav.classList.toggle('ecl-active');
+            eclOverlay.classList.toggle('ecl-active');
+            document.body.style.overflow = eclNav.classList.contains('ecl-active') ? 'hidden' : '';
+        });
+
+        eclOverlay.addEventListener('click', () => {
+            eclHamburger.classList.remove('ecl-active');
+            eclNav.classList.remove('ecl-active');
+            eclOverlay.classList.remove('ecl-active');
+            document.body.style.overflow = '';
+        });
+
+        document.querySelectorAll('.ecl-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 900) {
+                    eclHamburger.classList.remove('ecl-active');
+                    eclNav.classList.remove('ecl-active');
+                    eclOverlay.classList.remove('ecl-active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 900) {
+                eclNav.classList.remove('ecl-active');
+                eclHamburger.classList.remove('ecl-active');
+                eclOverlay.classList.remove('ecl-active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
     <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
-        <script>
-          var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"260977421779","zIndex":999999,"btnColorScheme":"light"};
-          window.onload = () => {
+    <script>
+        var wa_btnSetting = { "btnColor": "#16BE45", "ctaText": "", "cornerRadius": 40, "marginBottom": 20, "marginLeft": 20, "marginRight": 20, "btnPosition": "right", "whatsAppNumber": "260977421779", "zIndex": 999999, "btnColorScheme": "light" };
+        window.onload = () => {
             _waEmbed(wa_btnSetting);
-          };
-        </script>
+        };
+    </script>
 </body>
+
 </html>
