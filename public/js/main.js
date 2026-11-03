@@ -84,6 +84,16 @@ document.addEventListener('DOMContentLoaded', function () {
         // Transition speed
         speed: 1000,
     });
+
+    // Load slides 2 and 3 only after the page has loaded (or as soon as the visitor changes slide),
+    // so they don't compete with the first slide and the rest of the page.
+    const heroBanner = document.querySelector('.main-hero-banner');
+    if (heroBanner) {
+        const loadRemainingSlides = () => heroBanner.classList.add('hero-loaded');
+        if (document.readyState === 'complete') loadRemainingSlides();
+        else window.addEventListener('load', loadRemainingSlides, { once: true });
+        if (mainHeroSwiper && mainHeroSwiper.on) mainHeroSwiper.on('slideChange', loadRemainingSlides);
+    }
 });
 
 ////////////////////////////////////////////////////////////////////////

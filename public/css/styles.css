@@ -629,6 +629,8 @@ html {
     position: relative;
     height: 500px;
     overflow: hidden;
+    /* dark base matching the overlay, so there is no white flash while images load */
+    background-color: #131722;
 }
 
 .main-hero-slider-wrap {
@@ -661,17 +663,22 @@ html {
     z-index: 1;
 }
 
-/* Default slide backgrounds - replace with your actual images */
+/* Slide backgrounds: WebP with JPEG fallback.
+   Only the first slide loads up front (it is also preloaded in index.html);
+   slides 2 and 3 load after the page has finished loading (.hero-loaded is added by js/main.js). */
 .main-hero-slide-primary {
-    background-image: url('../assets/Hero.png');
+    background-image: url('../assets/hero-main.jpg');
+    background-image: image-set(url('../assets/hero-main.webp') type('image/webp'), url('../assets/hero-main.jpg') type('image/jpeg'));
 }
 
-.main-hero-slide-secondary {
+.hero-loaded .main-hero-slide-secondary {
     background-image: url('../assets/hero-1.jpg');
+    background-image: image-set(url('../assets/hero-1.webp') type('image/webp'), url('../assets/hero-1.jpg') type('image/jpeg'));
 }
 
-.main-hero-slide-tertiary {
+.hero-loaded .main-hero-slide-tertiary {
     background-image: url('../assets/hero-2.jpg');
+    background-image: image-set(url('../assets/hero-2.webp') type('image/webp'), url('../assets/hero-2.jpg') type('image/jpeg'));
 }
 
 .main-hero-overlay-img {
@@ -683,6 +690,7 @@ html {
     z-index: 3;
     pointer-events: none;
     background-image: url('../assets/hero-overlay.png');
+    background-image: image-set(url('../assets/hero-overlay.webp') type('image/webp'), url('../assets/hero-overlay.png') type('image/png'));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

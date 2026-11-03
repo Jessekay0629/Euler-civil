@@ -82,6 +82,9 @@
     </script>
     <!-- SEO:end -->
 
+    <!-- Hero images: start downloading immediately instead of waiting for the CSS -->
+    <link rel="preload" as="image" href="assets/hero-main.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/hero-overlay.webp" type="image/webp">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,8 +93,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -604,7 +605,6 @@
         });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
